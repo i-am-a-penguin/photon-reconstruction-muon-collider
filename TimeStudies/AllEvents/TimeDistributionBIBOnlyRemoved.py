@@ -2,17 +2,14 @@ import uproot
 import numpy as np
 import matplotlib.pyplot as plt
 import awkward as ak 
-from tqdm import tqdm
 
-nobib_file_path = f"../ntuple_photonGun_nobib_MAIAv5.root"
+nobib_file_path = f"../ntuple_photonGun_nobib_MAIAv5.root" # MODIFY
 nobib_file = uproot.open(nobib_file_path)
 nobib_tree = nobib_file["Events"]
-nobib_branches = nobib_tree.arrays()
 
-bib_file_path = f"../ntuple_photonGun_bib_MAIAv5.root"
+bib_file_path = f"../ntuple_photonGun_bib_MAIAv5.root" # MODIFY
 bib_file = uproot.open(bib_file_path)
 bib_tree = bib_file["Events"]
-bib_branches = bib_tree.arrays()
 
 bib_z = np.array(ak.flatten(bib_tree["ecal_hit_z"].array()))
 bib_depth = np.array(ak.flatten(bib_tree["ecal_hit_depth"].array()))
@@ -50,7 +47,6 @@ img = plt.imshow(avg_time.T, origin='lower',
 
 cbar = plt.colorbar(img, ax=ax, label="Average Hit Time [ns]")
 
-# ECAL geometry box
 ecal_barrel = plt.Rectangle((-2307, 1857), 4614, 268,
                          facecolor='green', alpha=0.1,
                          linewidth=2, zorder=1)
@@ -69,7 +65,4 @@ plt.xlim(-3000, 3000)
 plt.ylim(0, 2500)
 plt.title(f"Hit time distribution (BIB only removed)")
 plt.tight_layout()
-plt.savefig(f"figures/avg time distribution in rz plane bib only bib removed v5", dpi=600)
 plt.show()
-
-

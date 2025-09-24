@@ -7,6 +7,7 @@ The repository is organized (by workflow stage) into the following directories:
 - `ReadingData/`: scripts for inspecting branches and making histograms
 - `ShowerProfileStudies/`: scripts for analyzing electromagnetic shower profile
 - `TimeStudies/`: scripts for studying effects of time cuts in improving photon reconstruction
+- `Calibration/`: scripts for 
 
 ### Setup
 ```
@@ -16,7 +17,7 @@ cd photon-reconstruction-muon-collider
 
 ### Requirements
 
-These scripts require Python 3 and the following packages:
+These scripts require Python 3.12.2 and the following packages:
 
 - [uproot](https://github.com/scikit-hep/uproot) (reading and making ROOT files)
 - [awkward](https://awkward-array.org/) (handling jagged arrays)
@@ -24,8 +25,8 @@ These scripts require Python 3 and the following packages:
 - [matplotlib](https://matplotlib.org/) (plotting)
 - [scipy](https://scipy.org/) (for Gaussian fits in resolution scripts)
 
-You can install them with:
+To install the dependencies, run:
 ```
-pip install uproot awkward numpy matplotlib scipy
+pip install -r requirements.txt
 ```
  Modify file paths (marked by `# MODIFY`) to the MAIA photon gun sample ROOT files you are working with in the Python scripts.

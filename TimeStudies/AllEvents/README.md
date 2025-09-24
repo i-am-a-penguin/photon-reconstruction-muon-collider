@@ -1,5 +1,4 @@
 # Time Studies (averaging across all events)
-
 ### Using `AverageEnergyRetentionTimingCut.py`
 This script plots the energy retention vs timing cut curve across different photon energies. You can choose the photon energy ranges by modifying `energy_ranges` in the script.
 
@@ -25,10 +24,19 @@ python3 TimeDistributionBIBOnly.py
 python3 TimeDistributionBIBOnlyRemoved.py
 ```
 
-### Using 'HitCountDistribution.py'
+### Using `HitCountDistribution.py`
 This script plots a 2D map of the number of hits in the (z, r) plane.
 
 Run with:
 ```
 python3 HitCountDistribution.py
+```
+
+### Using `HitCountDistributionBIBOnly.py` and `HitCountDistributionBIBOnlyRemoved.py`
+`HitCountDistributionBIBOnly.py` plots the same thing as `HitCountDistribution.py` using only hits that appear in the BIB sample but not in the noBIB sample (BIB-only hits). `HitCountDistributionBIBOnlyRemoved.py` does the same but using only hits that appear in both the BIB and noBIB samples (shared hits).
+
+Run with:
+```
+python3 HitCountDistributionBIBOnly.py
+python3 HitCountDistributionBIBOnlyRemoved.py
 ```

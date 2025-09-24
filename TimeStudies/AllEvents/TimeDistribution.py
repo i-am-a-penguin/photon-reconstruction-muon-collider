@@ -22,15 +22,12 @@ hit_times = np.array(ak.flatten(ecal_hit_time))
 
 fig, ax = plt.subplots(figsize=(10, 6))
 
-# Define bin edges
 z_edges = np.linspace(-3000, 3000, 250)
 r_edges = np.linspace(0, 2500, 250)
 
-# 2D histograms: sum of times and count of hits
 sum_time, _, _ = np.histogram2d(z, depth, bins=[z_edges, r_edges], weights=hit_times)
 count_hits, _, _ = np.histogram2d(z, depth, bins=[z_edges, r_edges])
 
-# Avoid division by 0
 with np.errstate(divide='ignore', invalid='ignore'):
     avg_time = np.where(count_hits == 0, np.nan, sum_time / count_hits)
 

@@ -3,11 +3,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import awkward as ak 
 
-nobib_file_path = f"../ntuple_photonGun_nobib_MAIAv5.root"
+nobib_file_path = f"../ntuple_photonGun_nobib_MAIAv5.root" # MODIFY
 nobib_file = uproot.open(nobib_file_path)
 nobib_tree = nobib_file["Events"]
 
-bib_file_path = f"../ntuple_photonGun_bib_MAIAv5.root"
+bib_file_path = f"../ntuple_photonGun_bib_MAIAv5.root" # MODIFY
 bib_file = uproot.open(bib_file_path)
 bib_tree = bib_file["Events"]
 
@@ -62,5 +62,3 @@ plt.ylim(0, 2500)
 plt.title(f"Hit time distribution (BIB only)")
 plt.tight_layout()
 plt.show()
-
-
