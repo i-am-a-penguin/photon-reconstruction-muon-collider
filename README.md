@@ -7,7 +7,10 @@ The repository is organized (by workflow stage) into the following directories:
 - `ReadingData/`: scripts for inspecting branches and making histograms
 - `ShowerProfileStudies/`: scripts for analyzing electromagnetic shower profile
 - `TimeStudies/`: scripts for studying effects of time cuts in improving photon reconstruction
-- `Calibration/`: scripts for 
+- `ReconstructionAlgorithm/`:
+- `Calibration/`:
+- `BIBEnergyDensity/`:
+- `PhotonConversion/`:
 
 ### Setup
 ```

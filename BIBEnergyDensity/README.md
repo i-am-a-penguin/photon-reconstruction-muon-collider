@@ -1,4 +1,6 @@
 # BIB Energy Density
+This directory contains scripts to quantify the impact of BIB on photon reconstruction.
+
 ### Using `EnergyContainmentDeltaR.py`
 This script studies the retained photon signal fraction versus the cone half-angle and finds the cone half-angle ∆R that contains 90% of the photon's energy (R90).
 
