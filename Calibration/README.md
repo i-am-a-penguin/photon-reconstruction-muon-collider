@@ -27,11 +27,3 @@ Run with:
 python3 Calibration.py
 python3 TestingCalibrationOutput.py
 ```
-
-### Using `ResolutionPlotWithCalibration.py`
-Resolution plots after applying calibration data from `calibration_entries.root`.
-
-Run with:
-```
-python3 ResolutionPlotWithCalibration.py
-```

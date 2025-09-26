@@ -26,3 +26,12 @@ Run with:
 ```
 python3 DeltaRHistogram.py
 ```
+
+### Using `DeltaRHistogramWithMomentumCuts.py`
+This script makes a ΔR histogram between the true photon and the leading electron/positron from photon conversions for different transverse momentum cuts.
+
+Run with:
+```
+python3 DeltaRHistogramWithMomentumCuts.py electron
+python3 DeltaRHistogramWithMomentumCuts.py positron
+```

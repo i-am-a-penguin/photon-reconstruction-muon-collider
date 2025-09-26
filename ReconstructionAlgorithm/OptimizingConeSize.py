@@ -40,7 +40,7 @@ calibrations = {}  # dict to store calibration lookup tables per cone size
 
 for tag, r in zip(lst, cone_radii):
     # Load the calibration file for this cone
-    fname = f"calibration entries {tag}.root"
+    fname = f"../Calibration/calibration_entries {tag}.root"
     f = uproot.open(fname)
     tree = f["calib_bins"]
 

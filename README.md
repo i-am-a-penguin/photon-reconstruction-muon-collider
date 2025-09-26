@@ -4,13 +4,13 @@
 This repository contains analysis code for studying photon reconstruction in the MAIA detector concept for a 10 TeV muon collider.
 
 The repository is organized (by workflow stage) into the following directories:
-- `ReadingData/`: scripts for inspecting branches and making histograms
+- `ReadingData/`: scripts for inspecting branches and visualizing data
 - `ShowerProfileStudies/`: scripts for analyzing electromagnetic shower profile
 - `TimeStudies/`: scripts for studying effects of time cuts in improving photon reconstruction
-- `ReconstructionAlgorithm/`:
-- `Calibration/`:
-- `BIBEnergyDensity/`:
-- `PhotonConversion/`:
+- `ReconstructionAlgorithm/`: scripts for optimizing time cuts, spatial cuts, cone size in reconstruction precision
+- `Calibration/`: scripts for estimating and applying calibration to improve reconstruction accuracy
+- `BIBEnergyDensity/`: scripts for investigating the amount of BIB energy density that needs to be removed from the reconstructed photon energy
+- `PhotonConversion/`: scripts for studying photon conversion rates in the simulated samples
 
 ### Setup
 ```
